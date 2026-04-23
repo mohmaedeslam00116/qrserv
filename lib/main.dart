@@ -58,16 +58,16 @@ class QRServ extends StatelessWidget {
     return OKToast(
       // Toast properties
       position: ToastPosition.bottom,
-      textPadding: const .fromLTRB(25, 16, 25, 16),
-      backgroundColor: const .fromRGBO(60, 60, 60, 1),
+      textPadding: const EdgeInsets.symmetric(horizontal: 25, vertical: 16),
+      backgroundColor: const Color(0xFF3A3A3A),
       duration: const Duration(milliseconds: 3500),
       textStyle: TextStyle(
         fontFamily: QRSTheme.fontFamily,
-        color: const .fromRGBO(255, 255, 255, 1),
+        color: Colors.white,
         fontSize: 13,
-        fontVariations: [FontVariation('wght', 300)],
+        fontVariations: const [FontVariation('wght', 300)],
       ),
-      radius: 30,
+      radius: 16,
       child: MaterialApp(
         localizationsDelegates: AppLocalizations.localizationsDelegates,
         supportedLocales: AppLocalizations.supportedLocales,
